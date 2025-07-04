@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+                <title>Latest News - Apodictic</title>
+                
+        <meta name="description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta name="keywords" content="latest news, breaking news, world, events, finance, Apodictic">
+        <meta name="author" content="Apodictic News Team">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Latest News - Apodictic">
+        <meta property="og:description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta property="og:url" content="https://<your-username>.github.io/apodictic/section/latest/page/3">
+        <meta property="og:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta property="og:type" content="website">
+        <meta name="twitter:title" content="Latest News - Apodictic">
+        <meta name="twitter:description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta name="twitter:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ApodicticNews">
+        <meta name="twitter:creator" content="@ApodicticNews">
+        <link rel="canonical" href="https://<your-username>.github.io/apodictic/section/latest/page/3">
+        <link rel="alternate" type="application/rss+xml" title="Apodictic News RSS Feed" href="https://<your-username>.github.io/apodictic/rss?section=3">
+    
+            
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script src="/script.js" defer=""></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" onclick="restoreMainContent()"><img src="/assets/logo.png" alt="Apodictic Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/" onclick="restoreMainContent()">Home</a></li>
+                        <li><a href="/section/latest" onclick="showSectionView('latest')">Latest</a></li>
+                        <li><a href="/section/world" onclick="showSectionView('world')">World</a></li>
+                        <li><a href="/section/events" onclick="showSectionView('events')">Events</a></li>
+                        <li><a href="/section/financial" onclick="showSectionView('financial')">Finance</a></li>
+                        <li><a href="/section/search" onclick="showSearchView()">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="search-nav">
+                    <i class="fa-solid fa-magnifying-glass search-icon" onclick="toggleSearchBar()"></i>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button onclick="showSearchView()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main id="main-content">
+            <div class="section-view">
+                <h1>Latest</h1>
+                <div class="search-filters">
+                    <input type="text" id="keywordFilter" placeholder="Search..." oninput="debounceFilterSectionArticles('latest')">
+                    <select id="regionFilter" onchange="debounceFilterSectionArticles('latest')">
+                        <option value="">All Regions</option>
+                        <option value="north-america">North America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="south-america">South America</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    
+                    <select id="topicFilter" onchange="debounceFilterSectionArticles('latest')">
+                        <option value="">All Topics</option>
+                        <option value="world">World</option>
+                        <option value="events">Events</option>
+                        <option value="financial">Finance</option>
+                    </select>
+                    <input type="date" id="dateFilter" onchange="debounceFilterSectionArticles('latest')">
+                </div>
+                <div class="section-articles" id="sectionResults">
+                    
+                <div class="section-article" data-article-id="7f135be3-bb5e-4e60-8170-04d79f315a6e">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/7GKGKEBVAZJ33JENCHBPTQ3EUA.jpg?auth=cfab8cd457e12972fbfeac3d5911bcb092b8e05146955bdad3fb7202f019df44height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Parliament passes law to allow multiple citizenship for Ukrainians</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>Ukraine’s parliament passed a law allowing multiple citizenship to address demographic decline and strengthen diaspora ties.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="cd2acef0-7a24-47ba-9396-5632de723e7a">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/5XRQ5QQFLNKO3E64SZDND7TDDY.jpg?auth=e0ba30a6ab226f8b2535fe2cb89e65168795f51d39e68777240a239780738af2height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Airbus upbeat, but may have to wait for AirAsia deal</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>Airbus remains optimistic about AirAsia deals despite delays, as economic uncertainties and tariffs impact airline purchasing decisions.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="229f8d39-589b-4ec6-943f-3b0b9fa8ef7b">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/5PMLU2W73ZPFFKHLRXBCPONVWE.jpg?auth=78751a44a4c3214d8800ae42ec167f90c1684c9f3e9416755de512213e07f555height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Early Fed chair nomination could rattle markets</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>Trump’s early nomination of a new Federal Reserve chair could unsettle markets, with Scott Bessent a leading candidate.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="199ce4a5-026a-416a-8e38-8a0016c9edf3">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/QGTNQQGUOZJUDPHE3LLBI6HKTI.jpg?auth=481e3a78042ae1aeb0423a94c9d0a7e1e5b2688fd10725edbbecab0696e80e09height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Fed set to hold rates steady as Middle East crisis, tariffs cloud outlook</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>The Federal Reserve will likely keep interest rates at 4.25%-4.50% amid tariff and Middle East-driven inflation concerns.</p>
+                    </div>
+                </div>
+            
+                </div>
+                <div class="pagination">
+        <button class="prev-page" data-section="latest" data-current-page="3">Previous</button><button class="page-button " data-section="latest" data-page="1">1</button><button class="page-button " data-section="latest" data-page="2">2</button><button class="page-button active" data-section="latest" data-page="3">3</button><button class="next-page" data-section="latest" data-current-page="3" data-total-pages="3" disabled="">Next</button>
+    </div>
+            </div>
+        </main>
+        <div class="lower-sections">
+            <section class="world-section" id="world">
+                
+            </section>
+            <section class="events-section" id="events">
+                
+            </section>
+        </div>
+        <section class="financial-section">
+            <h2>Finance</h2>
+            <div class="finance-content">
+                <div class="finance-feature-article" id="finance-feature-article">
+                    
+                </div>
+                <aside class="finance-latest-section" id="finance-latest-section">
+                    
+                </aside>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="glass-side">
+                <h3>Newsletter</h3>
+                <input type="text" id="nameInput" placeholder="Your Name">
+                <input type="email" id="emailInput" placeholder="Your Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="right-side">
+                <h3>Newsletter</h3>
+                <p>Join our vibrant community and unlock a world of knowledge with our daily newsletter! Get exclusive access to the latest news, insightful articles, and expert tips delivered straight to your inbox. Stay informed on trending topics, uncover hidden gems, and never miss a beat—whether it's breaking news, industry updates, or curated stories tailored to your interests. Subscribe now and be the first to know what's shaping the world today!</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container footer-p">
+            <a href="/about" class="footer-link" data-page="about">About Us</a> | 
+            <a href="/contact" class="footer-link" data-page="contact">Contact Us</a> | 
+            <a href="/privacy" class="footer-link" data-page="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body></html>
