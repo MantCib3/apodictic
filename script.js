@@ -1029,7 +1029,7 @@ function showArticleDetail(articleId) {
                 </ul>
             </div>
             <div class="share-button">
-                <button onclick="navigator.share ? navigator.share({title: '${sanitizeInput(article.title || 'Article')}', url: window.location.href}) : alert('Sharing is not supported in this browser. Please copy the URL to share: ' + window.location.href)">Share Article</button>
+                <button onclick="navigator.share ? navigator.share({title: '${sanitizeInput(article.title || 'Article')}', url: window.location.href}) : alert('Sharing is not supported in this browser. Please copy the URL to share: ' + window.location.href)"><i class="fas fa-share"></i></button>
             </div>
         `;
 
