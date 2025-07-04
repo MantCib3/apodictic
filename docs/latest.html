@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+                <title>Latest News - Apodictic</title>
+                
+        <meta name="description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta name="keywords" content="latest news, breaking news, world, events, finance, Apodictic">
+        <meta name="author" content="Apodictic News Team">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Latest News - Apodictic">
+        <meta property="og:description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta property="og:url" content="https://<your-username>.github.io/apodictic/section/latest">
+        <meta property="og:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta property="og:type" content="website">
+        <meta name="twitter:title" content="Latest News - Apodictic">
+        <meta name="twitter:description" content="Stay updated with the latest breaking news and articles on World, Events, and Finance at Apodictic.">
+        <meta name="twitter:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ApodicticNews">
+        <meta name="twitter:creator" content="@ApodicticNews">
+        <link rel="canonical" href="https://<your-username>.github.io/apodictic/section/latest">
+        <link rel="alternate" type="application/rss+xml" title="Apodictic News RSS Feed" href="https://<your-username>.github.io/apodictic/rss?section=latest">
+    
+            
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script src="/script.js" defer=""></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" onclick="restoreMainContent()"><img src="/assets/logo.png" alt="Apodictic Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/" onclick="restoreMainContent()">Home</a></li>
+                        <li><a href="/section/latest" onclick="showSectionView('latest')">Latest</a></li>
+                        <li><a href="/section/world" onclick="showSectionView('world')">World</a></li>
+                        <li><a href="/section/events" onclick="showSectionView('events')">Events</a></li>
+                        <li><a href="/section/financial" onclick="showSectionView('financial')">Finance</a></li>
+                        <li><a href="/section/search" onclick="showSearchView()">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="search-nav">
+                    <i class="fa-solid fa-magnifying-glass search-icon" onclick="toggleSearchBar()"></i>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button onclick="showSearchView()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main id="main-content">
+            <div class="section-view">
+                <h1>Latest</h1>
+                <div class="search-filters">
+                    <input type="text" id="keywordFilter" placeholder="Search..." oninput="debounceFilterSectionArticles('latest')">
+                    <select id="regionFilter" onchange="debounceFilterSectionArticles('latest')">
+                        <option value="">All Regions</option>
+                        <option value="north-america">North America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="south-america">South America</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    
+                    <select id="topicFilter" onchange="debounceFilterSectionArticles('latest')">
+                        <option value="">All Topics</option>
+                        <option value="world">World</option>
+                        <option value="events">Events</option>
+                        <option value="financial">Finance</option>
+                    </select>
+                    <input type="date" id="dateFilter" onchange="debounceFilterSectionArticles('latest')">
+                </div>
+                <div class="section-articles" id="sectionResults">
+                    
+                <div class="section-article" data-article-id="cd37a2ee-f800-4001-800a-18f3f1d56299">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/LHIZ3N3I4FPVHH3ZVBIQGEUOKY.jpg?auth=e3ad2b21f4ea8f75313f1fe10a7f12b27cb23b353281353bbd4474dbfb41cfe3height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Parkland shareholders vote for $9.1 billion acquisition by Sunoco</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Parkland Corp shareholders voted in favor of a $9.1 billion deal to be acquired by U.S.-based Sunoco.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="35cafb3c-d2d2-4450-9240-fd6ca0be029c">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/HFESNGCIGRL53MIHX6C7WMKMQY.jpg?auth=a73fba46ce0fe5c0f1c71bc07a88549c5750b6e2253cab639e0df62754f3f16cheight=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Fed's Barr: inflation to rise, may see some persistence</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Federal Reserve Governor Michael Barr stated that higher import levies will put upward pressure on prices that may not prove temporary.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="e24cd9e7-42f3-4384-9ede-8dbe5cd81a75">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/HMQF6NZO4FOHLDHOXICX7X4B44.jpg?auth=5150705dd2071e2122a603e0234883408ca7886ee21e1cc78634d57065784751height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Investment groups call for exemption of passive income from US tax bill</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Six investment groups representing sectors including fund managers, venture capital, and real estate called for an exemption of passive income from a US tax bill.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="8a20bbd4-1e1b-4cdf-bb1a-06eb74a93a5e">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/XPHHQ6GZXNPRBNKMRA7Q3FFLN4.jpg?auth=91a49e831bb5350f5d91addb12120cefdf736591c7a6bd125cecd7f62d7e1201height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Gold Reserve requests clarification about US license protecting Citgo</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Gold Reserve has filed an emergency request with a court in Delaware asking for clarification about a license by the U.S. Treasury Department that protects Citgo Petroleum.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="29a8d5bb-6ad2-47bd-a5fd-92097b2d8aa3">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/V66DV23VQNOVFA2VATVRGTQLRM.jpg?auth=9e4cb445b061c8d303a790f2e0cb4d314c841a91bdebc10332bd21bf2b572f45height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Spirit Airlines urges US to reject JetBlue, United partnership</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Spirit Airlines has urged the Transportation Department to reject a proposed partnership between JetBlue Airways and United Airlines.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="0dbefbaa-350b-4c73-990e-e7fa37edeb38">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/4T57O3BHVFJMJLHPAPCMRXETBQ.jpg?auth=b21587347fdf67d828ddc8f25f7ac27d5c7cc41cb2ef00ff3911703ca2ebf824height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Prudential Financial's PGIM to merge units into $1 trillion credit platform</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>PGIM, the investment management arm of insurer Prudential Financial, will combine its fixed income and private credit units to create a nearly $1 trillion credit platform.</p>
+                    </div>
+                </div>
+            
+                </div>
+                <div class="pagination">
+        <button class="prev-page" data-section="latest" data-current-page="1" disabled="">Previous</button><button class="page-button active" data-section="latest" data-page="1">1</button><button class="page-button " data-section="latest" data-page="2">2</button><button class="page-button " data-section="latest" data-page="3">3</button><button class="next-page" data-section="latest" data-current-page="1" data-total-pages="3">Next</button>
+    </div>
+            </div>
+        </main>
+        <div class="lower-sections">
+            <section class="world-section" id="world">
+                
+            </section>
+            <section class="events-section" id="events">
+                
+            </section>
+        </div>
+        <section class="financial-section">
+            <h2>Finance</h2>
+            <div class="finance-content">
+                <div class="finance-feature-article" id="finance-feature-article">
+                    
+                </div>
+                <aside class="finance-latest-section" id="finance-latest-section">
+                    
+                </aside>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="glass-side">
+                <h3>Newsletter</h3>
+                <input type="text" id="nameInput" placeholder="Your Name">
+                <input type="email" id="emailInput" placeholder="Your Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="right-side">
+                <h3>Newsletter</h3>
+                <p>Join our vibrant community and unlock a world of knowledge with our daily newsletter! Get exclusive access to the latest news, insightful articles, and expert tips delivered straight to your inbox. Stay informed on trending topics, uncover hidden gems, and never miss a beat—whether it's breaking news, industry updates, or curated stories tailored to your interests. Subscribe now and be the first to know what's shaping the world today!</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container footer-p">
+            <a href="/about" class="footer-link" data-page="about">About Us</a> | 
+            <a href="/contact" class="footer-link" data-page="contact">Contact Us</a> | 
+            <a href="/privacy" class="footer-link" data-page="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body></html>
