@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+                <title>World News - Apodictic</title>
+                
+        <meta name="description" content="Explore global news and in-depth coverage of world events at Apodictic.">
+        <meta name="keywords" content="world news, global events, international news, Apodictic">
+        <meta name="author" content="Apodictic News Team">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="World News - Apodictic">
+        <meta property="og:description" content="Explore global news and in-depth coverage of world events at Apodictic.">
+        <meta property="og:url" content="https://<your-username>.github.io/apodictic/section/world">
+        <meta property="og:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta property="og:type" content="website">
+        <meta name="twitter:title" content="World News - Apodictic">
+        <meta name="twitter:description" content="Explore global news and in-depth coverage of world events at Apodictic.">
+        <meta name="twitter:image" content="https://<your-username>.github.io/apodictic/assets/logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ApodicticNews">
+        <meta name="twitter:creator" content="@ApodicticNews">
+        <link rel="canonical" href="https://<your-username>.github.io/apodictic/section/world">
+        <link rel="alternate" type="application/rss+xml" title="Apodictic News RSS Feed" href="https://<your-username>.github.io/apodictic/rss?section=world">
+    
+            
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script src="/script.js" defer=""></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" onclick="restoreMainContent()"><img src="/assets/logo.png" alt="Apodictic Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/" onclick="restoreMainContent()">Home</a></li>
+                        <li><a href="/section/latest" onclick="showSectionView('latest')">Latest</a></li>
+                        <li><a href="/section/world" onclick="showSectionView('world')">World</a></li>
+                        <li><a href="/section/events" onclick="showSectionView('events')">Events</a></li>
+                        <li><a href="/section/financial" onclick="showSectionView('financial')">Finance</a></li>
+                        <li><a href="/section/search" onclick="showSearchView()">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="search-nav">
+                    <i class="fa-solid fa-magnifying-glass search-icon" onclick="toggleSearchBar()"></i>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button onclick="showSearchView()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main id="main-content">
+            <div class="section-view">
+                <h1>World</h1>
+                <div class="search-filters">
+                    <input type="text" id="keywordFilter" placeholder="Search..." oninput="debounceFilterSectionArticles('world')">
+                    <select id="regionFilter" onchange="debounceFilterSectionArticles('world')">
+                        <option value="">All Regions</option>
+                        <option value="north-america">North America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="south-america">South America</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    
+                    <input type="date" id="dateFilter" onchange="debounceFilterSectionArticles('world')">
+                </div>
+                <div class="section-articles" id="sectionResults">
+                    
+                <div class="section-article" data-article-id="35cafb3c-d2d2-4450-9240-fd6ca0be029c">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/HFESNGCIGRL53MIHX6C7WMKMQY.jpg?auth=a73fba46ce0fe5c0f1c71bc07a88549c5750b6e2253cab639e0df62754f3f16cheight=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Fed's Barr: inflation to rise, may see some persistence</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Federal Reserve Governor Michael Barr stated that higher import levies will put upward pressure on prices that may not prove temporary.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="8a20bbd4-1e1b-4cdf-bb1a-06eb74a93a5e">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/XPHHQ6GZXNPRBNKMRA7Q3FFLN4.jpg?auth=91a49e831bb5350f5d91addb12120cefdf736591c7a6bd125cecd7f62d7e1201height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Gold Reserve requests clarification about US license protecting Citgo</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Gold Reserve has filed an emergency request with a court in Delaware asking for clarification about a license by the U.S. Treasury Department that protects Citgo Petroleum.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="4ea3ccbe-96bf-4086-8573-caba433d8ee0">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/OG7K7IODONJQVHBXDQTVXMCSXQ.jpg?auth=ed27c5f140980d8c48597aafad63e0d4f6f4b91bd5fcae67b0bb18e768a31aa6height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Shares of US, European airlines rise on hopes of Israel-Iran truce</h3>
+                        <div class="date">June 25, 2025</div>
+                        <p>Shares of U.S. and European airlines rose on Tuesday, while oil prices declined on expectations that a ceasefire between Israel and Iran would hold.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="ef5c2408-33a7-4633-a400-d212ce56abce">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/QCK6TR22QVPYRNSYTLRA7AV4EA.jpg?auth=122eaf5bfa68f9a8ff3a9ef0e2731227d486e2380a05fd2838a77b6b59aeb9d4height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Man shot by Kenyan police during protests is in intensive care, father says</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>A man shot by Kenyan police during Nairobi protests against extrajudicial killings is in intensive care, his father said.</p>
+                    </div>
+                </div>
+            
+                <div class="section-article" data-article-id="7f135be3-bb5e-4e60-8170-04d79f315a6e">
+                    <div class="article-image-container" style="background-image: url('https://www.reuters.com/resizer/v2/7GKGKEBVAZJ33JENCHBPTQ3EUA.jpg?auth=cfab8cd457e12972fbfeac3d5911bcb092b8e05146955bdad3fb7202f019df44height=1005width=1920quality=80smart=true')"></div>
+                    <div class="article-content">
+                        <h3>Parliament passes law to allow multiple citizenship for Ukrainians</h3>
+                        <div class="date">June 18, 2025</div>
+                        <p>Ukraine’s parliament passed a law allowing multiple citizenship to address demographic decline and strengthen diaspora ties.</p>
+                    </div>
+                </div>
+            
+                </div>
+                <div class="pagination">
+        <button class="prev-page" data-section="world" data-current-page="1" disabled="">Previous</button><button class="page-button active" data-section="world" data-page="1">1</button><button class="next-page" data-section="world" data-current-page="1" data-total-pages="1" disabled="">Next</button>
+    </div>
+            </div>
+        </main>
+        <div class="lower-sections">
+            <section class="world-section" id="world">
+                
+            </section>
+            <section class="events-section" id="events">
+                
+            </section>
+        </div>
+        <section class="financial-section">
+            <h2>Finance</h2>
+            <div class="finance-content">
+                <div class="finance-feature-article" id="finance-feature-article">
+                    
+                </div>
+                <aside class="finance-latest-section" id="finance-latest-section">
+                    
+                </aside>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="glass-side">
+                <h3>Newsletter</h3>
+                <input type="text" id="nameInput" placeholder="Your Name">
+                <input type="email" id="emailInput" placeholder="Your Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="right-side">
+                <h3>Newsletter</h3>
+                <p>Join our vibrant community and unlock a world of knowledge with our daily newsletter! Get exclusive access to the latest news, insightful articles, and expert tips delivered straight to your inbox. Stay informed on trending topics, uncover hidden gems, and never miss a beat—whether it's breaking news, industry updates, or curated stories tailored to your interests. Subscribe now and be the first to know what's shaping the world today!</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container footer-p">
+            <a href="/about" class="footer-link" data-page="about">About Us</a> | 
+            <a href="/contact" class="footer-link" data-page="contact">Contact Us</a> | 
+            <a href="/privacy" class="footer-link" data-page="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body></html>
