@@ -1083,7 +1083,7 @@ function showArticleDetail(articleId) {
 
 function handleInitialLoad() {
     try {
-        const path = window.location.pathname;
+        const path = window.location.pathname.replace(/\/$/, ''); // Remove trailing slash
         const queryParams = new URLSearchParams(window.location.search);
         console.log('Handling initial load for path:', path, 'with query:', queryParams.toString());
 
@@ -1094,7 +1094,7 @@ function handleInitialLoad() {
         window.currentTopic = sanitizeInput(queryParams.get('topic') || '', true);
         window.currentDate = sanitizeInput(queryParams.get('date') || '', true);
 
-        if (path === '/' || path === '') {
+        if (path === '' || path === '/') {
             restoreMainContent();
         } else if (path === '/about') {
             showAboutUsView();
@@ -1117,13 +1117,23 @@ function handleInitialLoad() {
                     }
                 }
             } else {
+                console.warn('Invalid section ID:', sectionId);
                 restoreMainContent();
+                document.getElementById('main-content').innerHTML = '<div class="no-articles">Invalid section.</div>';
             }
         } else if (path.startsWith('/article/')) {
             const articleId = sanitizeInput(path.split('/article/')[1].split('?')[0], true);
-            showArticleDetail(articleId);
+            if (articleId) {
+                showArticleDetail(articleId);
+            } else {
+                console.warn('Invalid article ID:', articleId);
+                restoreMainContent();
+                document.getElementById('main-content').innerHTML = '<div class="no-articles">Invalid article ID.</div>';
+            }
         } else {
+            console.warn('Unknown path:', path);
             restoreMainContent();
+            document.getElementById('main-content').innerHTML = '<div class="no-articles">Page not found.</div>';
         }
     } catch (error) {
         console.error('Error in handleInitialLoad:', error);
