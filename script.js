@@ -1084,7 +1084,15 @@ function showArticleDetail(articleId) {
 function handleInitialLoad() {
     try {
         const path = window.location.pathname;
-        console.log('Handling initial load for path:', path);
+        const queryParams = new URLSearchParams(window.location.search);
+        console.log('Handling initial load for path:', path, 'with query:', queryParams.toString());
+
+        // Parse query parameters for filters and pagination
+        const currentPage = parseInt(queryParams.get('page')) || 1;
+        window.currentKeyword = sanitizeInput(queryParams.get('q') || '');
+        window.currentRegion = sanitizeInput(queryParams.get('region') || '', true);
+        window.currentTopic = sanitizeInput(queryParams.get('topic') || '', true);
+        window.currentDate = sanitizeInput(queryParams.get('date') || '', true);
 
         if (path === '/' || path === '') {
             restoreMainContent();
@@ -1095,15 +1103,24 @@ function handleInitialLoad() {
         } else if (path === '/privacy') {
             showPrivacyPolicyView();
         } else if (path.startsWith('/section/')) {
-            const sectionId = sanitizeInput(path.split('/section/')[1], true);
+            const sectionId = sanitizeInput(path.split('/section/')[1].split('?')[0], true);
             if (['latest', 'world', 'events', 'financial', 'search'].includes(sectionId)) {
-                if (sectionId === 'search') showSearchView();
-                else showSectionView(sectionId);
+                if (sectionId === 'search') {
+                    showSearchView(currentPage);
+                    if (window.currentKeyword || window.currentRegion || window.currentTopic || window.currentDate) {
+                        debounceSearchArticles();
+                    }
+                } else {
+                    showSectionView(sectionId, currentPage);
+                    if (window.currentKeyword || window.currentRegion || window.currentTopic || window.currentDate) {
+                        debounceFilterSectionArticles(sectionId);
+                    }
+                }
             } else {
                 restoreMainContent();
             }
         } else if (path.startsWith('/article/')) {
-            const articleId = sanitizeInput(path.split('/article/')[1], true);
+            const articleId = sanitizeInput(path.split('/article/')[1].split('?')[0], true);
             showArticleDetail(articleId);
         } else {
             restoreMainContent();
